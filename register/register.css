@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+.header {
+    align-items: center;
+    background-color: #21c08b;
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+}
+
+.header__img {
+    margin-left: 30px;
+    width: 200px;
+}
+
+.register {
+    background: linear-gradient(#21C08B, #AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 27px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.register__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white ;
+    border-radius: 40px;
+    color: white;
+    padding: 30px 30px;
+    min-height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.register__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-family: 'Muli', sans-serif ;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 46px;
+    background-color: #AB88FF;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:600px) {
+    .register__container {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: 96px;
+    }
+
+    .footer a {
+        margin: 5px 0;
+    }
+}
